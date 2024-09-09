@@ -8,5 +8,12 @@ data = {
     "Payment Status": ["Paid","No"]
 }
 
+user = {
+    "Name":["User1","User2"]
+}
+
 df = pd.DataFrame(data)
 df.to_csv(r'./assets/booking.csv', index=False)
+
+du = pd.DataFrame(user)
+du.to_csv(r'./assets/user.csv', index=False)
